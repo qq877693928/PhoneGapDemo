@@ -26,7 +26,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('click', this.onDeviceReady, false);
     },
     // deviceready Event Handler
     //
@@ -45,6 +45,18 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-        console.lo
+    }
+};
+
+var load = {
+    initialize: function() {
+        this.loadNextEvents();
+    },
+
+    //延时加载新的界面
+    loadNextEvents: function() {
+        setTimeout(function() {
+            location.href='queue.html';
+        }, 2000);
     }
 };
