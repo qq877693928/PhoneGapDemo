@@ -67,11 +67,9 @@
             background: #973e76;
         }
         .swiper-slide {
-            height: 130px;
+            height: 120px;
             width: 100%;
-            line-height: 100px;
             opacity: 0.2;
-            text-align: center;
             -webkit-transition: 300ms;
             -moz-transition: 300ms;
             -ms-transition: 300ms;
@@ -110,6 +108,77 @@
             font-size: 42px;
             height: 100%;
         }
+        .topInfo {
+            overflow: hidden;
+            padding: .15rem 0;
+            border-bottom: .01rem solid #eee;
+            font-size: 100%;
+            border: 0;
+                margin: 0;
+        }
+        .topInfo .pic {
+            float: left;
+            -webkit-box-sizing: border-box;
+            border: .01rem solid #ccc;
+            margin-right: .1rem;
+            margin: 0;
+            font-size: 100%;
+            width: 100px;
+            height: 100px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background:url(./res/icon/android/icon-96-xhdpi.png) no-repeat center center;
+        }
+        .topInfo .txt {
+            margin: 0;
+            font-size: 100%;
+            margin-left: .7rem;
+            width: 330px;
+        }
+        .topInfo .status {
+            float: right;
+            -webkit-box-sizing: border-box;
+            margin-right: .1rem;
+            margin: 0;
+            font-size: 100%;
+            margin-top: 10px;
+            color: #7adfe7;
+            margin-top: 2rem;
+            width: 80px;
+        }
+        .topInfo .alive {
+            color: #7adfe7;
+        }
+        .topInfo .stop {
+            color: #979797;
+        }
+        .topInfo .txt h3 {
+            font-size: 18px;
+            word-break: break-all;
+            word-wrap: break-word;
+            font-weight: normal;
+            margin: 0;
+            margin-left: 120px;
+            border: 0;
+            display: block;
+            padding: 0;
+            line-height: 60px;
+        }
+        p {
+            display: block;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            border: 0;
+            padding: 0;
+            margin-left: 120px;
+        }
+        .topInfo .txt p {
+            line-height: 30px;
+            color: #999;
+            font-size: 15px;
+        }
     </style>
 </head>
 <body>
@@ -117,29 +186,100 @@
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide red-slide">
-            <div class="title">Slide 1</div>
+            <div class="topInfo">
+                <div class="status">
+                    <h3>无需排队</h3>
+                </div>
+                <div class="pic"><img></img></div>
+                <div class="txt">
+                    <h3>蚌埠谜底门店2（蚌埠店）</h3>
+                    <p><span class="iconfont icon-position"></span>3F-320</p>
+                </div>
+            </div>
         </div>
         <div class="swiper-slide blue-slide">
-                <img class="icon"></img>
-                <span class="name"><h5>味千拉面</h5><h4>味千拉面</h4></span>
+            <div class="topInfo">
+                <div class="status alive">
+                    <h3>无需排队</h3>
+                </div>
+                <div class="pic"><img></img></div>
+                <div class="txt">
+                    <h3>蚌埠谜底门店2（蚌埠店）</h3>
+                    <p><span class="iconfont icon-position"></span>3F-320</p>
+                </div>
+            </div>
         </div>
         <div class="swiper-slide orange-slide">
-            <div class="title">Slide 3</div>
+            <div class="topInfo">
+                <div class="status alive">
+                    <h3>无需排队</h3>
+                </div>
+                <div class="pic"><img></img></div>
+                <div class="txt">
+                    <h3>新辣道</h3>
+                    <p><span class="iconfont icon-position"></span>3F-320</p>
+                </div>
+            </div>
         </div>
         <div class="swiper-slide green-slide">
-            <div class="title">Slide 4</div>
+            <div class="topInfo">
+                <div class="status alive">
+                    <h3>无需排队</h3>
+                </div>
+                <div class="pic"><img></img></div>
+                <div class="txt">
+                    <h3>麻辣香锅</h3>
+                    <p><span class="iconfont icon-position"></span>3F-320</p>
+                </div>
+            </div>
         </div>
         <div class="swiper-slide pink-slide">
-            <div class="title">Slide 5</div>
+            <div class="topInfo">
+                <div class="status stop">
+                    <h3>暂停排队</h3>
+                </div>
+                <div class="pic"><img></img></div>
+                <div class="txt">
+                    <h3>啃得起</h3>
+                    <p><span class="iconfont icon-position"></span>3F-320</p>
+                </div>
+            </div>
         </div>
         <div class="swiper-slide red-slide">
-            <div class="title">Slide 6</div>
+            <div class="topInfo">
+                <div class="status stop">
+                    <h3>暂停排队</h3>
+                </div>
+                <div class="pic"><img></img></div>
+                <div class="txt">
+                    <h3>星巴克</h3>
+                    <p><span class="iconfont icon-position"></span>3F-320</p>
+                </div>
+            </div>
         </div>
         <div class="swiper-slide blue-slide">
-            <div class="title">Slide 7</div>
+            <div class="topInfo">
+                <div class="status stop">
+                    <h3>暂停排队</h3>
+                </div>
+                <div class="pic"><img></img></div>
+                <div class="txt">
+                    <h3>味千拉面</h3>
+                    <p><span class="iconfont icon-position"></span>3F-320</p>
+                </div>
+            </div>
         </div>
         <div class="swiper-slide orange-slide">
-            <div class="title">Slide 8</div>
+            <div class="topInfo">
+                <div class="status stop">
+                    <h3>暂停排队</h3>
+                </div>
+                <div class="pic"><img></img></div>
+                <div class="txt">
+                    <h3>羲和小馆</h3>
+                    <p><span class="iconfont icon-position"></span>3F-320</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -172,8 +312,15 @@
     setTimeout(function(){
       //Prepend new slide
       var colors = ['red','blue','green','orange','pink'];
+      var lineStatus = ['alive', 'stop'];
+      var lineTexts = ['无需排队', '暂停排队'];
+      var storeNames = ['羲和小馆', '味千拉面','巴贝拉','蓉李记','天万和食料理店','汉拿山'];
       var color = colors[Math.floor(Math.random()*colors.length)];
-      mySwiper.prependSlide('<div class="title">Slide '+slideNumber+'</div>', 'swiper-slide '+color+'-slide');
+      var index = Math.floor(Math.random()*lineStatus.length);
+      var lineSt = lineStatus[index];
+      var lineText = lineTexts[index];
+      var storeName = storeNames[Math.floor(Math.random()*storeNames.length)];
+      mySwiper.prependSlide('<div class="topInfo"><div class="status '+lineSt+'"><h3>'+lineText+'</h3></div><div class="pic"><img></img></div><div class="txt"><h3>'+storeName+'</h3><p><span class="iconfont icon-position"></span>3F-320</p></div>', 'swiper-slide '+color+'-slide');
       //Release interactions and set wrapper
       mySwiper.setWrapperTranslate(0,0,0)
       mySwiper.params.onlyExternal=false;

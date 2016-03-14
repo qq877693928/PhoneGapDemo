@@ -111,6 +111,8 @@ public class CordovaActivity extends Activity {
         loadConfig();
         if (!preferences.getBoolean("ShowTitle", false)) {
             getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+        }else {
+            getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
         }
 
         if (preferences.getBoolean("SetFullscreen", false)) {
